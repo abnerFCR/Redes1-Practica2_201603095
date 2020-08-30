@@ -290,8 +290,11 @@ Una vez, conectado y configurado de la forma anteriormente descrita, las configu
 - ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
 
 #### PC4
-
+***
+---
+***
 - ![image](https://user-images.githubusercontent.com/37676214/90330801-dcacde00-df6c-11ea-9221-fb9d3fd0e730.png)
+
 
 #### PC5
 ''' 
@@ -300,4 +303,5 @@ Una vez, conectado y configurado de la forma anteriormente descrita, las configu
 '''
 ''' 
 '''
+
 - ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
