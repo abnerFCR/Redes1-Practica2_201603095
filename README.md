@@ -161,3 +161,143 @@ $ ifconfig
 -
 ![image](https://user-images.githubusercontent.com/37676214/91649295-9907a900-ea2f-11ea-9bed-8cf35c8b83b2.png)
 
+
+### Configuración del Router
+
+
+***Nota***: hay que añadir una interfaz mas al router. 
+
+-
+![image](https://user-images.githubusercontent.com/37676214/91649531-99ee0a00-ea32-11ea-8eef-198b8f9da006.png)
+
+-
+![image](https://user-images.githubusercontent.com/37676214/91649539-a3777200-ea32-11ea-95ac-d237b301db2a.png)
+
+Para configurar el router, se sigue el siguente algoritmo.
+
+
+1. Se arrasta el router al area de trabajo.
+2. Se enciende (Click derecho -> Start).
+3. Se entra al terminal (Click derecho -> console).
+4. Se entra a modo privilegiado en el router.
+
+```sh
+R1 > enable
+``` 
+
+5. Opcionalmente podemos visualizar un resumen de la interfaz ip. 
+
+```sh
+R1# show ip interface brief
+``` 
+Obteniendo el siguiente resultado. 
+
+-
+![image](https://user-images.githubusercontent.com/37676214/91649603-f6512980-ea32-11ea-8526-85b01e25391c.png)
+
+6. Procedemos a ingresar en la configuración del router.
+
+```sh
+R1# configure terminal
+``` 
+
+7. Configuramos la interfaz.
+
+```sh
+R1(config)# int fastethernet 0/0
+``` 
+
+8. Insertamos la dirección IP que tendrá ese puerto.
+
+```sh
+R1(config-if)# ip address 192.168.13.1 255.255.255.192
+``` 
+
+9. Configuramos la velocidad de la interfaz.
+
+```sh
+R1(config-if)# speed auto 
+``` 
+
+10. Coguramos el modo full-duplex de la interfaz.
+
+```sh
+R1(config-if)# full-duplex
+``` 
+
+11. Encendemos la interfaz.
+
+```sh
+R1(config-if) # no shutdown
+``` 
+
+12. Salimos de la configuracion de la interfaz.
+
+```sh
+R1(config-if)# exit 
+``` 
+
+13. Repetimos del paso 7 al 12 con los siguientes valores
+-Interfaz: FastEthernet 0/1 
+-IP:       192.168.13.65
+-Mascara:  255.255.255.192
+**-**
+-Interfaz: FastEthernet 1/1 
+-IP:       192.168.13.129
+-Mascara:  255.255.255.192
+
+14. Salimos de la configuracion del Router
+
+```sh
+R1(config)# exit 
+``` 
+
+15. Guardamos los cambios.
+
+```sh
+R1# write memory 
+``` 
+
+15. Verificamos que la configuracion este bien.  
+
+```sh
+R1# show ip interface brief
+``` 
+Si todo esta bien el router deberia tener este resumen de interfaz ip. 
+
+-
+![image](https://user-images.githubusercontent.com/37676214/91649658-5c3db100-ea33-11ea-8345-e6a794f2271e.png)
+
+
+### Verificando Conexiones
+
+Una vez, conectado y configurado de la forma anteriormente descrita, las configuraciones ya nos deberian permitir la comunicacion entre todas las maquinas, Esto se puede corroborrar haciendo ping desde la terminal de cualquier host hacia cualquiera de las direcciones ip de los demás. 
+
+#### TinyLinuxVM-1
+
+- ![image](https://user-images.githubusercontent.com/37676214/91649792-ed615780-ea34-11ea-86ea-1926dcc5e1cf.png)
+
+#### PC1
+
+- ![image](https://user-images.githubusercontent.com/37676214/91649849-77a9bb80-ea35-11ea-8957-fabea7d3c88a.png)
+
+#### PC2
+
+- ![image](https://user-images.githubusercontent.com/37676214/90330801-dcacde00-df6c-11ea-9221-fb9d3fd0e730.png)
+
+#### PC3
+
+- ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
+
+#### PC4
+
+- ![image](https://user-images.githubusercontent.com/37676214/90330801-dcacde00-df6c-11ea-9221-fb9d3fd0e730.png)
+
+#### PC5
+''' 
+'''
+''' 
+'''
+''' 
+'''
+- ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
