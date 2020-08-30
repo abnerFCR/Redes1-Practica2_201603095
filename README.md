@@ -287,21 +287,14 @@ Una vez, conectado y configurado de la forma anteriormente descrita, las configu
 
 #### PC3
 
-- ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
+- ![image](https://user-images.githubusercontent.com/37676214/91651263-e1cb5c00-ea47-11ea-87ff-7f6fbff8d822.png)
 
 #### PC4
-***
----
-***
-- ![image](https://user-images.githubusercontent.com/37676214/90330801-dcacde00-df6c-11ea-9221-fb9d3fd0e730.png)
+
+- ![image](https://user-images.githubusercontent.com/37676214/91651286-2f47c900-ea48-11ea-8306-ae5eb87ab724.png)
 
 
 #### PC5
-''' 
-'''
-''' 
-'''
-''' 
-'''
 
-- ![image](https://user-images.githubusercontent.com/37676214/90330813-f2ba9e80-df6c-11ea-8c61-754650a731fa.png)
+- ![image](https://user-images.githubusercontent.com/37676214/91651297-69b16600-ea48-11ea-980a-397d35a6641f.png)
+
