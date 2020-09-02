@@ -36,3 +36,5 @@ Maquina virtual y PC1 hacia PC2 y PC4 a PC1
 ![image](https://user-images.githubusercontent.com/37676214/91653086-7fc82200-ea5a-11ea-963f-0e8570f68718.png)
 
 ![image](https://user-images.githubusercontent.com/37676214/91653099-aede9380-ea5a-11ea-90f4-55094c49683c.png)
+
+0x9ed4
